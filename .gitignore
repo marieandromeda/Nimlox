@@ -1,0 +1,73 @@
+# =========================
+# Xcode
+# =========================
+
+# Build products / DerivedData
+DerivedData/
+build/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Per-user Xcode state
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+# Xcode temporary / logs
+*.xcactivitylog
+*.xcresult
+
+# SwiftPM
+.build/
+Package.resolved
+
+# =========================
+# Nim
+# =========================
+
+# Nim compilation cache
+nimcache/
+.nimcache/
+
+# Nimble
+nimble.lock
+nimblecache/
+
+# Generated C / object files (defensive)
+# I'm not sure whether enabling this is a bad idea, but Nim can generate C files. 
+# I don't anticipate needing any C source in this app so it seems fine.
+*.c
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+
+# Nim binaries
+Nimlox
+
+# =========================
+# macOS
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# =========================
+# Editor / tooling
+# =========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# Misc
+# =========================
+
+# Logs
+*.log
