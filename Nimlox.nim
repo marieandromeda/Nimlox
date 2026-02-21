@@ -27,5 +27,5 @@ when isMainModule:
     mainVM.runFile(args[0])
   else:
     stderr.write "Usage: nimlox [path]\n"
-    quit(64)
+    quit(64) # Command Usage Error.
   mainVM.free()

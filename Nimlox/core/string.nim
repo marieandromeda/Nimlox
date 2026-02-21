@@ -7,9 +7,12 @@ import std/strformat
 func hash(string: RawString): RawHash =
   result = 2166136261u32
   for i in 0 ..< string.len:
-    let c = string.data[i].RawHash
-    result = (result xor c) * 16777619u32
-  debugEcho &"hash({string}) -> {result}"
+    let c = string.data[i]
+    if c == '\0': # Sometimes the string is null-terminated, but we don't want that in the hash.
+      break
+    let h = c.RawHash
+    result = (result xor h) * 16777619u32
+  debugEcho &"hash({string}[{string.len}]) -> {result}"
 
 # Computes the `hash` field from the rawString.
 proc computeHash*(string: var ObjString) =
