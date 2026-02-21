@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		CDCBE43C2F4A3226000CCCD3 /* Nimlox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Nimlox; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCBE4572F4A4378000CCCD3 /* Nimlox.nim */ = {isa = PBXFileReference; lastKnownFileType = text; path = Nimlox.nim; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +45,7 @@
 		CDCBE4332F4A3226000CCCD3 = {
 			isa = PBXGroup;
 			children = (
+				CDCBE4572F4A4378000CCCD3 /* Nimlox.nim */,
 				CDCBE43E2F4A3226000CCCD3 /* Nimlox */,
 				CDCBE43D2F4A3226000CCCD3 /* Products */,
 			);
